@@ -462,7 +462,7 @@ export class Registrazione extends Component {
                                 
                                 else{
                                     
-                                    axios.post("http://localhost:3000/Client/RecuperaPassword_exist", this.state)
+                                    axios.post("https://stardust-deploy-test.herokuapp.com/Client/RecuperaPassword_exist", this.state)
                                         
                                         .then(result => {
 
@@ -472,7 +472,7 @@ export class Registrazione extends Component {
                                             
                                             }else{
 
-                                                    axios.post("http://localhost:3000/Client/Registrazione", this.state)
+                                                    axios.post("https://stardust-deploy-test.herokuapp.com/Client/Registrazione", this.state)
                                             
                                                     .then(result => {
                                                         
