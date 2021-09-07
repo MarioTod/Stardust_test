@@ -31,7 +31,7 @@ export default class LoginCliente extends Component{
 
   axiosPost = () => {
 
-    axios.post("https://git.heroku.com/stardust-deploy-test.git/Client/AccessoCliente", this.state)
+    axios.post("https://stardust-deploy-test.herokuapp.com/Client/AccessoCliente", this.state)
         .then(result => {
             
                
