@@ -64,7 +64,7 @@ export default class Pagamento extends React.Component{
 
     componentDidMount(){
 
-        axios.post("http://localhost:3000/Client/Pagamento_get_data", this.state).
+        axios.post("https://stardust-deploy-test.herokuapp.com/Client/Pagamento_get_data", this.state).
                 then(result => {
                     
                         this.setState({
@@ -83,7 +83,7 @@ export default class Pagamento extends React.Component{
 
         if(this.state.primary_opt=="mezzo"){
             
-            axios.post("http://localhost:3000/Client/Pagamento_get_price", this.state)
+            axios.post("https://stardust-deploy-test.herokuapp.com/Client/Pagamento_get_price", this.state)
             
             .then(result => {
 
