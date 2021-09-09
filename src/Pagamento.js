@@ -355,7 +355,7 @@ export default class Pagamento extends React.Component{
                                         //   2) Aggiorno la prenotazione
                                         //   3) Faccio partire il pagamento relativo alla nuova prenotazione
 
-                                        axios.post("http://localhost:3000/Client/EliminaPrenotazione_refund", this.state)
+                                        axios.post("https://stardust-deploy-test.herokuapp.com/Client/EliminaPrenotazione_refund", this.state)
                                         .then(result => {
                                             alert("Abbiamo avviato la procedura per effettuare il rimborso per la tua precedente prenotazione, riceverai una mail di conferma.")
                                             
@@ -366,7 +366,7 @@ export default class Pagamento extends React.Component{
                                         })
 
 
-                                        axios.post("http://localhost:3000/Client/ModificaPrenotazione", this.state).
+                                        axios.post("https://stardust-deploy-test.herokuapp.com/Client/ModificaPrenotazione", this.state).
                                         then(result => {
 
                                             alert("Prenotazione aggiornata");
@@ -376,7 +376,7 @@ export default class Pagamento extends React.Component{
                                             alert('Si è verificato un errore imprevisto:' + error);
                                         })
 
-                                        axios.post("http://localhost:3000/Client/EliminaPrenotazione_refund_up", this.state).
+                                        axios.post("https://stardust-deploy-test.herokuapp.com/Client/EliminaPrenotazione_refund_up", this.state).
                                             then(result => {
                                                 
                                                 
@@ -393,7 +393,7 @@ export default class Pagamento extends React.Component{
 
                                     }else{
                                     
-                                        axios.post("http://localhost:3000/Client/AggiungiPrenotazione_add", this.state).
+                                        axios.post("https://stardust-deploy-test.herokuapp.com/Client/AggiungiPrenotazione_add", this.state).
                                         then(result => {
 
                                             this.setState({
@@ -404,7 +404,7 @@ export default class Pagamento extends React.Component{
                                             alert("Prenotazione completata");
                                             
 
-                                            axios.post("http://localhost:3000/Client/Pagamento_pay", this.state).
+                                            axios.post("https://stardust-deploy-test.herokuapp.com/Client/Pagamento_pay", this.state).
                                             then(result => {
                                                 
                                                 
@@ -553,7 +553,7 @@ export default class Pagamento extends React.Component{
                                             //   2) Aggiorno la prenotazione
                                             //   3) Faccio partire il pagamento relativo alla nuova prenotazione
     
-                                            axios.post("http://localhost:3000/Client/EliminaPrenotazione_refund", this.state)
+                                            axios.post("https://stardust-deploy-test.herokuapp.com/Client/EliminaPrenotazione_refund", this.state)
                                             .then(result => {
                                                 alert("Abbiamo avviato la procedura per effettuare il rimborso per la tua precedente prenotazione, riceverai una mail di conferma.")
                                                 
@@ -563,7 +563,7 @@ export default class Pagamento extends React.Component{
                                                 alert('Si è verificato un errore imprevisto:' + error);
                                             })
     
-                                            axios.post("http://localhost:3000/Client/ModificaPrenotazione", this.state).
+                                            axios.post("https://stardust-deploy-test.herokuapp.com/Client/ModificaPrenotazione", this.state).
                                             then(result => {
     
                                                 alert("Prenotazione aggiornata");       
@@ -573,7 +573,7 @@ export default class Pagamento extends React.Component{
                                                 alert('Si è verificato un errore imprevisto:' + error);
                                             })
 
-                                            axios.post("http://localhost:3000/Client/EliminaPrenotazione_refund_up", this.state).
+                                            axios.post("https://stardust-deploy-test.herokuapp.com/Client/EliminaPrenotazione_refund_up", this.state).
                                             then(result => {
                                                 
                                                 
@@ -590,7 +590,7 @@ export default class Pagamento extends React.Component{
     
                                         }else{
 
-                                            axios.post("http://localhost:3000/Client/AggiungiPrenotazione_add_div", this.state).
+                                            axios.post("https://stardust-deploy-test.herokuapp.com/Client/AggiungiPrenotazione_add_div", this.state).
                                             then(result => {
 
                                                 this.setState({
@@ -600,7 +600,7 @@ export default class Pagamento extends React.Component{
                                                 
                                                 alert("Prenotazione completata");
 
-                                                axios.post("http://localhost:3000/Client/Pagamento_pay", this.state).
+                                                axios.post("https://stardust-deploy-test.herokuapp.com/Client/Pagamento_pay", this.state).
                                                 then(result => {
                                                     
                                                     
