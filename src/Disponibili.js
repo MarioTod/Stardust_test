@@ -39,7 +39,7 @@ export default class Disponibili extends Component{
     componentDidMount(){
         if(this.state.opzione==="mezzo"){
 
-            axios.post("http://localhost:3000/Client/AggiungiPrenotazione_vehicles", this.state).
+            axios.post("https://stardust-deploy-test.herokuapp.com/Client/AggiungiPrenotazione_vehicles", this.state).
             then(result => {
                 
                     alert('Seleziona il tuo veicolo');
@@ -60,7 +60,7 @@ export default class Disponibili extends Component{
 
             }else if(this.state.opzione==="autista"){
 
-                axios.post("http://localhost:3000/Client/AggiungiPrenotazione_drivers", this.state).
+                axios.post("https://stardust-deploy-test.herokuapp.com/Client/AggiungiPrenotazione_drivers", this.state).
                 then(result => {
                     
                         alert('Seleziona il tuo autista');
