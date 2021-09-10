@@ -96,11 +96,6 @@ export class Home extends Component{
 
                 </Form>
 
-
-                <br/><br/>
-                <p> <strong>Accedi e Prenota!</strong></p>
-                <Button variant="outline-secondary" href="/LoginCliente"><strong>Login</strong></Button>
-
                 <br/><br/><br/><br/>
 
         
