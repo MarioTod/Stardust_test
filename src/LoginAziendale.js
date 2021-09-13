@@ -124,7 +124,7 @@ export default class Login extends Component{
           </Form.Group>
           <br/>
           <p align="center">
-          <Button block size="lg" value="Submit" type="submit" disabled={!this.state.validate}
+          <Button block size="lg" value="Submit" type="submit" 
                   onClick={clickEvent => {
                     clickEvent.preventDefault();
                    this.axiosPost()
