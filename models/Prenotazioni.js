@@ -152,8 +152,8 @@ prenotazioni.getAll=async (id)=>{
         //memorizziamo le prenotazioni del cliente
         let i=0;
         for (const el of result_q){
-            result_q[i].start_date =new Date(new Date(result_q[i].start_date).getTime()+7200000);
-            result_q[i].end_date =new Date(new Date(result_q[i].end_date).getTime()+7200000);
+            //result_q[i].start_date =new Date(new Date(result_q[i].start_date).getTime()+7200000);
+            //result_q[i].end_date =new Date(new Date(result_q[i].end_date).getTime()+7200000);
             client_prenotations.set(el.code_prenotation,el);
             console.log("prenotazioni cliente memorizzate \n" );
             console.log(result_q[i]);
