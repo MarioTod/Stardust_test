@@ -154,7 +154,6 @@ export default class LeMiePrenotazioni extends Component{
         let prenotazioni;
 
         prenotazioni =this.state.object.map(prenotazione=>{
-            //  aggiungere dopo quando modifica è pronto ----->  && prenotazione.complete==="false" && this.controlloData(prenotazione.start_date, prenotazione.end_date)===false
             if(prenotazione.primary_opt==='mezzo'){
                 return <div>
                 <div className="container" align="center" style={{margin:"15px"}}>
